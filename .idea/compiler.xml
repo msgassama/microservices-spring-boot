@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="jwtsecurityGateway" />
+        <module name="EureukaServerRegistry" />
+        <module name="dashboard-service" />
+        <module name="admin-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="admin-service" target="11" />
+      <module name="dashboard-service" target="11" />
+      <module name="EureukaServerRegistry" target="11" />
+      <module name="jwtsecurityGateway" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="EureukaServerRegistry" options="-parameters" />
+      <module name="admin-service" options="-parameters" />
+      <module name="dashboard-service" options="-parameters" />
+      <module name="jwtsecurityGateway" options="-parameters" />
+    </option>
+  </component>
+</project>
